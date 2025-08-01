@@ -1,72 +1,0 @@
-Script started on 2025-07-31 22:05:35-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="76" LINES="41"]
-To run a command as administrator (user "root"), use "sudo <command>".
-See "man sudo_root" for details.
-
-[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [7mgit log --oneline[27mgit log --oneline
-[?2004l[?1h=[33m8cfb81f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m v5[m
-[33mf9a9e9b[m v4[m
-[33m34ac503[m v3[m
-[33m9b27006[m v2[m
-[33mc40ab9d[m v1[m
-[33m5ce8222[m Corrige v2 revertido[m
-[33mc6b815e[m v2[m
-[33m10e8a20[m v1[m
-[K[?1l>[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [7mgit log -1[27mgit log -1
-[?2004l[?1h=[33mcommit 8cfb81fa0d0b5be7de161f8d984640c3a38006ca[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m[m
-Author: Joao <joao@JoaoVictor.localdomain>[m
-Date:   Thu Jul 31 22:05:25 2025 -0300[m
-[m
-    v5[m
-[K[?1l>[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [7mgit config user.name[27m
-[7mgit config user.email[27m[A]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git config user.name
-git config user.email
-[?2004lJoao
-[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git config user.email[1Pname[10Plog -1-onelineexit[Kgit log --onelinecommit -m "Corrige v2 revertido"[13Preset --soft HEAD~1[3Pcheckout master ommit -m "Corrige v2 revertido"[13Preset --soft HEAD~1[6Plog --onelinecheckout main[4Pcat notas.txtgit checkout HEAD~2[2Plog --onelineecho "v3" >> notas.txt && git commit -am "v3"[A]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [C[C[C[C[C[C[C2" >> notas.txt && git commit -am "v2"[A]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [13Pgit add . && git commit -m "v1"
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pecho "v1" > notas.txtcd ..[Kmkdir git-workshop && cd git-workshop[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit config --global user.mail victor.almeida@edu.unifor.br[A]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pname "Joao"
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmail victor.almeida@edu.unifor.br
-[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git config --global user.mail victor.almeida@edu.unifor.br[A]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [C[C[C[C[C[C[C[C[C[C[Cuser.email[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git config user.email--global user.mail victor.almeida@edu.unifor.br[A]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [C[C[C[C[C[C[C[C[C[C[Cuser.email[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pname[10Plog -1config user.nameemail--global user.mail victor.almeida@edu.unifor.br[A]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [C[C[C[C[C[C[C[C[C[C[Cuser.email[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pname[10Plog -1-oneline1[Kconfig user.name
-[?2004lJoao
-[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git config user.nameemail
-[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [7mgit diff HEAD~1 HEAD[27mgit diff HEAD~1 HEAD
-[?2004l[?1h=[1mdiff --git a/README.md b/README.md[m[m
-[1mindex ed7ce12..4d73d61 100644[m[m
-[1m--- a/README.md[m[m
-[1m+++ b/README.md[m[m
-[36m@@ -2,3 +2,4 @@[m [mv1[m[m
- v2[m[m
- v3[m[m
- v4[m[m
-[32m+[m[32mv5[m[m
-[K[?1l>[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [7mgit revert HEAD[27mgit revert HEAD
-[?2004lhint: Waiting for your editor to close the file... [?2004h[?1049h[22;0;0t[1;41r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[39;32H(B[0;7m[ Reading... ](B[m[39;30H(B[0;7m[ Read 17 lines ](B[m[H(B[0;7m  GNU nano 7.2     /home/joao/git-workshop/.git/COMMIT_EDITMSG              [1;75H(B[m[40d(B[0;7m^G(B[m Help[40;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[40;61H(B[0;7m^T(B[m Execute[41d(B[0;7m^X(B[m Exit[41;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2dRevert "v5"[4dThis reverts commit 8cfb81fa0d0b5be7de161f8d984640c3a38006ca.[6d[36m# Please enter the commit message for your changes. Lines starting[7d# with '#' will be ignored, and an empty message aborts the commit.[8d#[9d# Committer: Joao <joao@JoaoVictor.localdomain>[10d#[11d# On branch master[12d# Changes to be committed:[13d#[38;5;208m       [36mmodified:   README.md[14d#[15d# Untracked files:[16d#[38;5;208m       [36mlab1-sessao2.txt[17d#[38;5;208m       [36mlab1-sessao3.txt[18d#[2d[39m(B[m[?12l[?25h[?25l[40;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[41;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[39d(B[0;7mFile Name to Write: /home/joao/git-workshop/.git/COMMIT_EDITMSG             [39;64H(B[m[?12l[?25h[?25l[39;31H[1K (B[0;7m[ Writing... ](B[m[K[1;75H[39;30H(B[0;7m[ Wrote 17 lines ](B[m[40;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[41;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[?12l[?25h[2d[?25l[39d[J[41d[?12l[?25h[41;1H[?1049l[23;0;0t[?1l>[?2004l[K[master 43b6d8d] Revert "v5"
- Committer: Joao <joao@JoaoVictor.localdomain>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly:
-
-    git config --global user.name "Your Name"
-    git config --global user.email you@example.com
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 1 file changed, 1 deletion(-)
-[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [7mgit reset --hard HEAD~2[27mgit reset --hard HEAD~2
-[?2004lHEAD is now at f9a9e9b v4
-[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [7mgit log --oneline[27mgit log --oneline
-[?2004l[?1h=[33mf9a9e9b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m v4[m
-[33m34ac503[m v3[m
-[33m9b27006[m v2[m
-[33mc40ab9d[m v1[m
-[33m5ce8222[m Corrige v2 revertido[m
-[33mc6b815e[m v2[m
-[33m10e8a20[m v1[m
-[K[?1l>[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ exit
-[?2004lexit
-
-Script done on 2025-07-31 22:06:59-03:00 [COMMAND_EXIT_CODE="0"]
