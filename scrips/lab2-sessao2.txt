@@ -1,0 +1,173 @@
+Script started on 2025-08-01 21:24:20-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="76" LINES="41"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;joao@JoaoVictor: ~/git-workshop/scrips[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop/scrips[00m$ [7mgit checkout -b feature-a[27mgit checkout -b feature-a
+[?2004lSwitched to a new branch 'feature-a'
+[?2004h]0;joao@JoaoVictor: ~/git-workshop/scrips[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop/scrips[00m$ [7mecho "linha A" > arquivo.txt[27mecho "linha A" > arquivo.txt
+[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop/scrips[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop/scrips[00m$ git add arquivo.txt 
+[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop/scrips[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop/scrips[00m$ git status
+[?2004lOn branch feature-a
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   arquivo.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mlab1-session6.txt[m
+	[31mlab2-sessao1.txt[m
+	[31mlab2-sessao2.txt[m
+
+[?2004h]0;joao@JoaoVictor: ~/git-workshop/scrips[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop/scrips[00m$ cd ..
+[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git stay[Ktys[K[Kus
+[?2004lOn branch feature-a
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   scrips/arquivo.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mscrips/lab1-session6.txt[m
+	[31mscrips/lab2-sessao1.txt[m
+	[31mscrips/lab2-sessao2.txt[m
+
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ ls
+[?2004lREADME.md  app.txt  arquivo.txt  notas.txt  [0m[01;34mscrips[0m
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git c[Kbrnach[K[K[K[Kanch
+[?2004l[?1h=* [32mfeature-a[m[m
+  master[m[m
+  prod[m[m
+  test[m[m
+[K[?1l>[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ a[Kcat art[Kw[Kquivo.txt 
+[?2004llinha 1
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [7mecho "linha A" > arquivo.txt[27mecho "linha A" > arquivo.txt
+[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git satus[K[K[K[Ktatus
+[?2004lOn branch feature-a
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   scrips/arquivo.txt[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   arquivo.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mscrips/lab1-session6.txt[m
+	[31mscrips/lab2-sessao1.txt[m
+	[31mscrips/lab2-sessao2.txt[m
+
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ a[Kgit add arquivo.txt 
+[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git commit -m "Feature A"
+[?2004l[feature-a 114fc53] Feature A
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 scrips/arquivo.txt
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git checkout master 
+[?2004lSwitched to branch 'master'
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [7mgit checkout -b feature-b[27mgit checkout -b feature-b
+[?2004lSwitched to a new branch 'feature-b'
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ echo "linha B"v[K > arquivo.txt [K
+[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git status
+[?2004lOn branch feature-b
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   arquivo.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mscrips/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ giit a[K[K[K[Kt add arquivo.txt 
+[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git commit -m "Feature B"
+[?2004l[feature-b 028337a] Feature B
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git checkout master 
+[?2004lSwitched to branch 'master'
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git merge[K[K[K[K[Kstatus
+[?2004lOn branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mscrips/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [7mgit merge feature-a[27mgit merge feature-a
+[?2004lUpdating 4ffbf2b..114fc53
+Fast-forward
+ arquivo.txt        | 2 [32m+[m[31m-[m
+ scrips/arquivo.txt | 1 [32m+[m
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 scrips/arquivo.txt
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [7mgit merge feature-b[27mgit merge feature-b
+[?2004lAuto-merging arquivo.txt
+CONFLICT (content): Merge conflict in arquivo.txt
+Automatic merge failed; fix conflicts and then commit the result.
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git status
+[?2004lOn branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+	[31mboth modified:   arquivo.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mscrips/lab1-session6.txt[m
+	[31mscrips/lab2-sessao1.txt[m
+	[31mscrips/lab2-sessao2.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git [K[K[K[Knano arquivo.txt 
+[?2004l[?2004h[?1049h[22;0;0t[1;41r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[39;32H(B[0;7m[ Reading... ](B[m[39;31H(B[0;7m[ Read 5 lines ](B[m[H(B[0;7m  GNU nano 7.2                     arquivo.txt                              [1;75H(B[m[40d(B[0;7m^G(B[m Help[40;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[40;61H(B[0;7m^T(B[m Execute[41d(B[0;7m^X(B[m Exit[41;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2d<<<<<<< HEAD[3dlinha A[4d=======[5dlinha B[6d>>>>>>> feature-b[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25hl[?25l[?12l[?25h[4d[?25l[?12l[?25h=[?25l[?12l[?25h[5d[?25l[?12l[?25hn[?25l[?12l[?25h[6d[?25l[?12l[?25h>[?25l[?12l[?25h>[?25l[?12l[?25h>[?25l[?12l[?25h>[?25l[?12l[?25h [?25l[?12l[?25hf[?25l[?12l[?25he[?25l[?12l[?25ha[?25l[?12l[?25ht[?25l[?12l[?25hu[?25l[?12l[?25hr[?25l[?12l[?25he[?25l[39d[K[?12l[?25h[6;17H[?25l[?12l[?25hb[?25l[?12l[?25h[7d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[6;18H[?25l[1;48H(B[0;7m*[75G(B[m[?12l[?25h[6;17H [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[5;8H[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[4;39r[39;1H
+[1;41r[4;1H[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h HEAD[K[?25l[?12l[?25hHEAD[K[?25l[?12l[?25hEAD[K[?25l[?12l[?25hAD[K[?25l[?12l[?25hD[K[?25l[?12l[?25h[K[?25l[2;39r[39;1H
+[1;41r[2;1H[?12l[?25h[?25l[40;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[41;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[39d(B[0;7mFile Name to Write: arquivo.txt                                             [39;32H(B[m[?12l[?25h[?25l[1K (B[0;7m[ Writing... ](B[m[K[1;48H(B[0;7m [75G(B[m[39;30H(B[0;7m[ Wrote 2 lines ](B[m[40;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[41;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[?12l[?25h[2d[?25l[39d[J[41d[?12l[?25h[41;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git status7
+[?2004lgit: 'status7' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git status7[K
+[?2004lOn branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+	[31mboth modified:   arquivo.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mscrips/lab1-session6.txt[m
+	[31mscrips/lab2-sessao1.txt[m
+	[31mscrips/lab2-sessao2.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git add arquivo.txt 
+[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git commit -m "Resolve conflito entra [K[Ke A e B" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K"
+[?2004l[master 870310f] Resolve conflito entre A e B
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [7mgit log --oneline --all[27mgit log --oneline --all
+[?2004l[?1h=[33m870310f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m Resolve conflito entre A e B[m
+[33m028337a[m[33m ([m[1;32mfeature-b[m[33m)[m Feature B[m
+[33m114fc53[m[33m ([m[1;32mfeature-a[m[33m)[m Feature A[m
+[33m4ffbf2b[m v3 main[m
+[33m8e48de2[m[33m ([m[1;32mtest[m[33m, [m[1;32mprod[m[33m)[m v2 main[m
+[33mc94fc14[m algum commit[m
+[33mcf56ce8[m commit 2[m
+[33mf21f48c[m Revert "v1"[m
+[33mcb5e33c[m v1[m
+[33m2edc973[m commit 1[m
+[33mf9a9e9b[m v4[m
+[33m34ac503[m v3[m
+[33m9b27006[m v2[m
+[33mc40ab9d[m v1[m
+[33m5ce8222[m Corrige v2 revertido[m
+[33mc6b815e[m v2[m
+[33m10e8a20[m v1[m
+[K[?1l>[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ exit
+[?2004lexit
+
+Script done on 2025-08-01 21:30:41-03:00 [COMMAND_EXIT_CODE="0"]

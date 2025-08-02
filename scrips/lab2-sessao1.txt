@@ -1,0 +1,129 @@
+Script started on 2025-08-01 21:05:13-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="76" LINES="41"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [7mgit branch test[27mgit branch test
+[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [7mgit branch prod[27mgit branch prod
+[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ echo "v2 main" >> app..txt[1Ptxt
+[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git commit -am "v2 main"
+[?2004lOn branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mapp.txt[m
+	[31mlab1-session6.txt[m
+	[31mlab2-sessao1.txt[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git a[Kstatus
+[?2004lOn branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mapp.txt[m
+	[31mlab1-session6.txt[m
+	[31mlab2-sessao1.txt[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git checkout test 
+[?2004lSwitched to branch 'test'
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [7mgit merge main[27m[1Pgit merge mai[K[K[K[K[K[K[K[K[K[K[K[K[Kgit branhc[K[K[K[K[K[Kbranch
+[?2004l[?1h=  master[m[m
+  prod[m[m
+* [32mtest[m[m
+[K[?1l>[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [7mgit merge main[27mgit merge main
+[?2004lmerge: main - not something we can merge
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git [K[K[K[Kcat app.txt 
+[?2004lv2 main
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git merge master [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmkdir scrips
+[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ mv lab1-session6.txt lab2-sessao1.txt /scr[K[K[K[Kscrips/
+[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ l
+[?2004lREADME.md  app.txt  arquivo.txt  notas.txt  [0m[01;34mscrips[0m/
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ ll
+[?2004ltotal 32
+drwxr-xr-x 4 joao joao 4096 Aug  1 21:11 [0m[01;34m.[0m/
+drwxr-x--- 6 joao joao 4096 Aug  1 21:07 [01;34m..[0m/
+drwxr-xr-x 8 joao joao 4096 Aug  1 21:06 [01;34m.git[0m/
+-rw-r--r-- 1 joao joao   12 Jul 31 22:06 README.md
+-rw-r--r-- 1 joao joao    8 Aug  1 21:06 app.txt
+-rw-r--r-- 1 joao joao    8 Aug  1 19:19 arquivo.txt
+-rw-r--r-- 1 joao joao    9 Jul 31 22:10 notas.txt
+drwxr-xr-x 2 joao joao 4096 Aug  1 21:11 [01;34mscrips[0m/
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ ls
+[?2004lREADME.md  app.txt  arquivo.txt  notas.txt  [0m[01;34mscrips[0m
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ lsl[Kmv lab1-session6.txt lab2-sessao1.txt scrips/[A]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [Ckdir scrips[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat app.txt git merge main[4Pbranchmerge main[4Pbranchcheckout test [8Pstatuscommit -am "v2 main"
+[?2004lOn branch test
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mapp.txt[m
+	[31mscrips/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git add app.txt 
+[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git add app.txt commit -am "v2 main"
+[?2004l[test 8e48de2] v2 main
+ 1 file changed, 1 insertion(+)
+ create mode 100644 app.txt
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git status
+[?2004lOn branch test
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mscrips/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git merge main
+[?2004lmerge: main - not something we can merge
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git merge main[K[Kster 
+[?2004lAlready up to date.
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git checkout test 
+[?2004lAlready on 'test'
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git checkout test [K[K[K[K[Kprod 
+[?2004lSwitched to branch 'prod'
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git checkout prod test[C[1Pmerge master[C[K[K[K[K[K[K[Ktest
+[?2004lUpdating c94fc14..8e48de2
+Fast-forward
+ app.txt | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+ create mode 100644 app.txt
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git checkout mai[Kster 
+[?2004lSwitched to branch 'master'
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git branch
+[?2004l[?1h=* [32mmaster[m[m
+  prod[m[m
+  test[m[m
+[K[?1l>[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ echo "v3 main" >> app.txt
+[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git add [K[K[K[K[K[K[K[Kgit status
+[?2004lOn branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mapp.txt[m
+	[31mscrips/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git add app.txt 
+[?2004l[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git c[K [Kcommit -am "v3 main"
+[?2004l[master 4ffbf2b] v3 main
+ 1 file changed, 1 insertion(+)
+ create mode 100644 app.txt
+[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ git commit -am "v3 main"[8Padd app.txt [6Pstatusecho "v3 main" >> app.txt[15Pgit branch
+[?2004l[?1h=* [32mmaster[m[m
+  prod[m[m
+  test[m[m
+[K[?1l>[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ [7mgit log --oneline --all[27mgit log --oneline --all
+[?2004l[?1h=[33m4ffbf2b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m v3 main[m
+[33m8e48de2[m[33m ([m[1;32mtest[m[33m, [m[1;32mprod[m[33m)[m v2 main[m
+[33mc94fc14[m algum commit[m
+[33mcf56ce8[m commit 2[m
+[33mf21f48c[m Revert "v1"[m
+[33mcb5e33c[m v1[m
+[33m2edc973[m commit 1[m
+[33mf9a9e9b[m v4[m
+[33m34ac503[m v3[m
+[33m9b27006[m v2[m
+[33mc40ab9d[m v1[m
+[33m5ce8222[m Corrige v2 revertido[m
+[33mc6b815e[m v2[m
+[33m10e8a20[m v1[m
+[K[?1l>[?2004h]0;joao@JoaoVictor: ~/git-workshop[01;32mjoao@JoaoVictor[00m:[01;34m~/git-workshop[00m$ exit
+[?2004lexit
+
+Script done on 2025-08-01 21:14:56-03:00 [COMMAND_EXIT_CODE="0"]
